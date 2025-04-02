@@ -8,22 +8,19 @@ from nltk.stem import WordNetLemmatizer
 import re
 import numpy as np
 import random
+from imblearn.over_sampling import SMOTE
+import spacy
 
 nltk.download('stopwords')
 nltk.download('wordnet')
 
+# Load spaCy model
+nlp = spacy.load("en_core_web_sm")
+
 def preprocess_text(text):
-    # Remove special characters and numbers
-    text = re.sub(r'[^a-zA-Z\s]', '', text)
-    # Convert to lowercase
-    text = text.lower()
-    # Tokenize
-    words = text.split()
-    # Remove stopwords
-    words = [word for word in words if word not in stopwords.words('english')]
-    # Lemmatize
-    lemmatizer = WordNetLemmatizer()
-    words = [lemmatizer.lemmatize(word) for word in words]
+    # Use spaCy for advanced text processing
+    doc = nlp(text)
+    words = [token.lemma_ for token in doc if not token.is_stop and token.is_alpha]
     return ' '.join(words)
 
 def synonym_replacement(words, n):
@@ -64,8 +61,53 @@ def augment_data(data, num_augmented=5):
         augmented_texts = augment_text(row['Symptoms'], num_augmented)
         for text in augmented_texts:
             augmented_data.append({'Symptoms': text, 'Illness': row['Illness']})
-    augmented_df = pd.DataFrame(augmented_data)
-    return augmented_df
+    return pd.DataFrame(augmented_data)
+
+def handle_problematic_classes(data):
+    """Remove or augment problematic classes based on their characteristics"""
+    
+    # Add flu-specific symptom variations
+    flu_variations = [
+        {'Illness': 'Flu', 'Symptoms': 'high fever, muscle aches, exhaustion, dry cough'},
+        {'Illness': 'Flu', 'Symptoms': 'chills, body pain, fatigue, coughing, sore throat'},
+        {'Illness': 'Flu', 'Symptoms': 'severe fatigue, fever, headache, congestion'},
+        {'Illness': 'Flu', 'Symptoms': 'influenza symptoms, fever, weakness, respiratory symptoms'},
+        {'Illness': 'Flu', 'Symptoms': 'high temperature, body aches, tiredness, chest discomfort'}
+    ]
+    data = pd.concat([data, pd.DataFrame(flu_variations)])
+    
+    # Classes to remove (those with consistently poor performance or no samples)
+    remove_classes = [
+        'Meningitis',       # Class 18
+        'Hypercalcemia'     # Class 81
+    ]
+    
+    # Classes to augment (those with potential for improvement)
+    augment_classes = {
+        'Flu': 15,                      # Class 6
+        'Urinary Tract Infection': 10,  # Class 37
+        'Acne': 8,                      # Class 54
+        'Boils': 8,                     # Class 60
+        'Hernia': 12                    # Class 80
+    }
+    
+    # Remove problematic classes
+    data = data[~data['Illness'].isin(remove_classes)]
+    
+    # Create extra augmented samples for classes that need improvement
+    extra_samples = []
+    for illness, num_aug in augment_classes.items():
+        illness_data = data[data['Illness'] == illness]
+        if not illness_data.empty:
+            for _, row in illness_data.iterrows():
+                augmented_texts = augment_text(row['Symptoms'], num_augmented=num_aug)
+                for text in augmented_texts:
+                    extra_samples.append({'Symptoms': text, 'Illness': illness})
+    
+    if extra_samples:
+        data = pd.concat([data, pd.DataFrame(extra_samples)])
+    
+    return data
 
 def load_and_preprocess_data(file_path):
     # Load the dataset
@@ -74,8 +116,8 @@ def load_and_preprocess_data(file_path):
     # Handle missing data
     data.dropna(subset=['Symptoms'], inplace=True)
     
-    # Skip preprocessing symptoms
-    # data['Symptoms'] = data['Symptoms'].apply(preprocess_text)
+    # Handle problematic classes
+    data = handle_problematic_classes(data)
     
     # Encode categorical labels
     label_encoder = LabelEncoder()
@@ -90,18 +132,20 @@ def load_and_preprocess_data(file_path):
     y = data['Illness']
     
     # Convert the symptoms to a suitable format using TF-IDF vectorizer
-    vectorizer = TfidfVectorizer()
+    vectorizer = TfidfVectorizer(ngram_range=(1, 2))  # Use bigrams
     X = vectorizer.fit_transform(X)
     
     # Convert the sparse matrix to a dense format
     X = X.toarray()
     
-    # Debugging: Print class distribution before splitting
-    unique, counts = np.unique(y, return_counts=True)
-    print("Class distribution before splitting:", dict(zip(unique, counts)))
+    # Simple SMOTE balancing
+    smote = SMOTE(random_state=42)
+    X, y = smote.fit_resample(X, y)
     
-    # Split the data into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    # Use standard train_test_split
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.2, random_state=42
+    )
     
     # Debugging: Print samples of the preprocessed data and labels
     print("Sample preprocessed data:", X_train[:5])

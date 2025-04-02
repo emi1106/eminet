@@ -3,4 +3,9 @@ scikit-learn
 tensorflow
 nltk
 imblearn
+keras
+spacy
+# Add the following line to ensure the spaCy model is downloaded
+!python -m spacy download en_core_web_sm
+
 

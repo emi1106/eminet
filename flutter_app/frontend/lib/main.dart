@@ -32,8 +32,9 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final TextEditingController _controller = TextEditingController();
-  List<Map<String, String>> _messages = [];
+  final List<Map<String, String>> _messages = [];
   bool _isLoading = false;
+  String _symptoms = "";
 
   Future<void> _sendMessage(String message) async {
     setState(() {
@@ -41,28 +42,31 @@ class _MyHomePageState extends State<MyHomePage> {
       _isLoading = true;
     });
 
+    final url = 'http://10.0.2.2:5000/predict';
     final response = await http.post(
-      Uri.parse('http://10.0.2.2:5000/predict'),
-      headers: <String, String>{
-        'Content-Type': 'application/json; charset=UTF-8',
-      },
-      body: jsonEncode(<String, String>{
-        'symptoms': message,
+      Uri.parse(url),
+      headers: {"Content-Type": "application/json"},
+      body: jsonEncode({
+        "symptoms": _symptoms.isEmpty ? message : _symptoms,
+        "follow_up": _symptoms.isEmpty ? "" : message,
       }),
     );
 
     if (response.statusCode == 200) {
-      final Map<String, dynamic> data = jsonDecode(response.body);
+      final data = jsonDecode(response.body);
       setState(() {
-        _messages.add({'sender': 'bot', 'text': data['illness']});
-        if (data['follow_up_question'] != null) {
+        _messages.add({'sender': 'bot', 'text': data['diagnosis_message']});
+        if (data['follow_up_question'] != null && data['follow_up_question'].isNotEmpty) {
           _messages.add({'sender': 'bot', 'text': data['follow_up_question']});
+          _symptoms = message;  // Store symptoms for follow-up
+        } else {
+          _symptoms = "";  // Reset symptoms after final diagnosis
         }
         _isLoading = false;
       });
     } else {
       setState(() {
-        _messages.add({'sender': 'bot', 'text': 'Error: ${response.reasonPhrase}'});
+        _messages.add({'sender': 'bot', 'text': 'Error: ${response.body}'});
         _isLoading = false;
       });
     }
@@ -72,7 +76,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
       body: Column(
@@ -85,12 +88,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 return ListTile(
                   title: Text(message['text']!),
                   subtitle: Text(message['sender']!),
-                  tileColor: message['sender'] == 'user' ? Colors.blue[100] : Colors.grey[200],
                 );
               },
             ),
           ),
-          if (_isLoading) const CircularProgressIndicator(),
+          if (_isLoading) CircularProgressIndicator(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
@@ -98,13 +100,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 Expanded(
                   child: TextField(
                     controller: _controller,
-                    decoration: const InputDecoration(
+                    decoration: InputDecoration(
                       labelText: 'Enter your message',
                     ),
                   ),
                 ),
                 IconButton(
-                  icon: const Icon(Icons.send),
+                  icon: Icon(Icons.send),
                   onPressed: () {
                     if (_controller.text.isNotEmpty) {
                       _sendMessage(_controller.text);

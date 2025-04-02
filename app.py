@@ -9,6 +9,7 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from follow_up_questions import follow_up_questions, detailed_follow_up
+import spacy
 
 nltk.download('stopwords')
 nltk.download('wordnet')
@@ -29,18 +30,13 @@ except Exception as e:
     logging.error(f"❌ Error loading model or preprocessing tools: {e}")
     raise RuntimeError("Failed to load model/vectorizer/label_encoder.")
 
+# Load spaCy model
+nlp = spacy.load("en_core_web_sm")
+
 def preprocess_text(text):
-    # Remove special characters and numbers
-    text = re.sub(r'[^a-zA-Z\s]', '', text)
-    # Convert to lowercase
-    text = text.lower()
-    # Tokenize
-    words = text.split()
-    # Remove stopwords
-    words = [word for word in words if word not in stopwords.words('english')]
-    # Lemmatize
-    lemmatizer = WordNetLemmatizer()
-    words = [lemmatizer.lemmatize(word) for word in words]
+    # Use spaCy for advanced text processing
+    doc = nlp(text)
+    words = [token.lemma_ for token in doc if not token.is_stop and token.is_alpha]
     return ' '.join(words)
 
 @app.route('/predict', methods=['POST'])
@@ -48,17 +44,21 @@ def predict():
     try:
         data = request.get_json()
         symptoms = data.get("symptoms", "").strip()
-        follow_up = data.get("follow_up", "").strip().lower() if data.get("follow_up") else ""
+        follow_up = data.get("follow_up", "")
 
         if not symptoms:
             return jsonify({"error": "No symptoms provided"}), 400
 
         symptoms = preprocess_text(symptoms)
         symptoms_vectorized = vectorizer.transform([symptoms]).toarray()
-        prediction = model.predict(symptoms_vectorized).argmax(axis=1)
-        illness = label_encoder.inverse_transform(prediction)
-        diagnosis_message = f"The predicted illness is: {illness[0]}"
-        
+        prediction = model.predict(symptoms_vectorized)
+        confidence = np.max(prediction)
+        illness = label_encoder.inverse_transform(prediction.argmax(axis=1))
+        diagnosis_message = f"The predicted illness is: {illness[0]} with confidence {confidence:.2f}"
+
+        # Debug: Log what is being returned to Flutter
+        logging.info(f"Diagnosis message: {diagnosis_message}, Follow-up: {follow_up}")
+
         if not follow_up:
             if illness[0].lower() in follow_up_questions:
                 follow_up_question = follow_up_questions[illness[0].lower()]
@@ -68,14 +68,15 @@ def predict():
                     if symptom in symptoms:
                         for condition, question in questions:
                             return jsonify({"diagnosis_message": diagnosis_message, "follow_up_question": question})
-                return jsonify({"diagnosis_message": diagnosis_message})
+                return jsonify({"diagnosis_message": diagnosis_message, "follow_up_question": ""})
         else:
+            follow_up = follow_up.strip().lower()
             if follow_up == "yes":
                 diagnosis_message += f"\nThe diagnosis of {illness[0]} is more likely."
             else:
                 diagnosis_message += f"\nThe diagnosis of {illness[0]} is less likely. Please consult a doctor for a more accurate diagnosis."
-        
-        return jsonify({"diagnosis_message": diagnosis_message})
+
+        return jsonify({"diagnosis_message": diagnosis_message, "follow_up_question": ""})
 
     except Exception as e:
         logging.error(f"Prediction error: {e}")
