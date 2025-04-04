@@ -5,7 +5,9 @@ nltk
 imblearn
 keras
 spacy
-# Add the following line to ensure the spaCy model is downloaded
-!python -m spacy download en_core_web_sm
+flask
+flask-cors
+joblib
+# After installing requirements, run: python -m spacy download en_core_web_sm
 
 
