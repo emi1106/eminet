@@ -2,12 +2,13 @@ pandas
 scikit-learn
 tensorflow
 nltk
-imblearn
-keras
-spacy
-flask
-flask-cors
+imblearn # For imbalanced-learn (SMOTE)
+spacy>=3.0 # Specify version if needed
+Flask
+Flask-Cors
 joblib
-# After installing requirements, run: python -m spacy download en_core_web_sm
-
-
+numpy # Explicitly add numpy
+# After installing requirements, run:
+# python -m nltk.download wordnet
+# python -m nltk.download stopwords
+# python -m spacy download en_core_web_sm

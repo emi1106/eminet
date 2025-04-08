@@ -7,19 +7,27 @@
 
 #include "flutter/generated_plugin_registrant.h"
 
+// Application structure definition
 struct _MyApplication {
   GtkApplication parent_instance;
   char** dart_entrypoint_arguments;
 };
 
+// Define the application as a GTK application type
 G_DEFINE_TYPE(MyApplication, my_application, GTK_TYPE_APPLICATION)
 
-// Implements GApplication::activate.
+/**
+ * Implements GApplication::activate.
+ * Sets up and displays the main application window.
+ */
 static void my_application_activate(GApplication* application) {
   MyApplication* self = MY_APPLICATION(application);
+  
+  // Create the main application window
   GtkWindow* window =
       GTK_WINDOW(gtk_application_window_new(GTK_APPLICATION(application)));
 
+  // Header bar configuration
   // Use a header bar when running in GNOME as this is the common style used
   // by applications and is the setup most users will be using (e.g. Ubuntu
   // desktop).
@@ -37,6 +45,8 @@ static void my_application_activate(GApplication* application) {
     }
   }
 #endif
+
+  // Set up window header/title depending on platform
   if (use_header_bar) {
     GtkHeaderBar* header_bar = GTK_HEADER_BAR(gtk_header_bar_new());
     gtk_widget_show(GTK_WIDGET(header_bar));
@@ -47,9 +57,11 @@ static void my_application_activate(GApplication* application) {
     gtk_window_set_title(window, "frontend");
   }
 
+  // Configure window appearance
   gtk_window_set_default_size(window, 1280, 720);
   gtk_widget_show(GTK_WIDGET(window));
 
+  // Initialize Flutter project and view
   g_autoptr(FlDartProject) project = fl_dart_project_new();
   fl_dart_project_set_dart_entrypoint_arguments(project, self->dart_entrypoint_arguments);
 
@@ -57,14 +69,20 @@ static void my_application_activate(GApplication* application) {
   gtk_widget_show(GTK_WIDGET(view));
   gtk_container_add(GTK_CONTAINER(window), GTK_WIDGET(view));
 
+  // Register Flutter plugins
   fl_register_plugins(FL_PLUGIN_REGISTRY(view));
 
+  // Focus the Flutter view
   gtk_widget_grab_focus(GTK_WIDGET(view));
 }
 
-// Implements GApplication::local_command_line.
+/**
+ * Implements GApplication::local_command_line.
+ * Processes command line arguments and prepares them for Flutter.
+ */
 static gboolean my_application_local_command_line(GApplication* application, gchar*** arguments, int* exit_status) {
   MyApplication* self = MY_APPLICATION(application);
+  
   // Strip out the first argument as it is the binary name.
   self->dart_entrypoint_arguments = g_strdupv(*arguments + 1);
 
@@ -81,7 +99,10 @@ static gboolean my_application_local_command_line(GApplication* application, gch
   return TRUE;
 }
 
-// Implements GApplication::startup.
+/**
+ * Implements GApplication::startup.
+ * Called when the application is starting up.
+ */
 static void my_application_startup(GApplication* application) {
   //MyApplication* self = MY_APPLICATION(object);
 
@@ -90,7 +111,10 @@ static void my_application_startup(GApplication* application) {
   G_APPLICATION_CLASS(my_application_parent_class)->startup(application);
 }
 
-// Implements GApplication::shutdown.
+/**
+ * Implements GApplication::shutdown.
+ * Called when the application is shutting down.
+ */
 static void my_application_shutdown(GApplication* application) {
   //MyApplication* self = MY_APPLICATION(object);
 

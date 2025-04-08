@@ -4,11 +4,13 @@
 // future. If not, the values below would default to using the project name when this becomes a
 // 'flutter create' template.
 
-// The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = frontend
+// PRODUCT_NAME: The application's name and title displayed in macOS menus
+PRODUCT_NAME = EMInet Medical Diagnosis
 
-// The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.frontend
+// PRODUCT_BUNDLE_IDENTIFIER: Unique app identifier for the App Store 
+// Should match the bundle ID in your Apple Developer account
+PRODUCT_BUNDLE_IDENTIFIER = com.eminet.medicalapp
 
-// The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2025 com.example. All rights reserved.
+// PRODUCT_COPYRIGHT: Copyright notice displayed in application information
+// Update year and organization name before release
+PRODUCT_COPYRIGHT = Copyright © 2025 EMInet. All rights reserved.

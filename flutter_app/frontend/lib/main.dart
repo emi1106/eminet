@@ -1,3 +1,17 @@
+/*
+ * Medical Diagnosis Chatbot Application
+ * 
+ * This app provides a multilingual interface for users to describe their 
+ * symptoms and receive preliminary medical diagnoses.
+ * 
+ * Features:
+ * - English and Romanian language support
+ * - Backend API integration with Flask
+ * - Persistent language preferences
+ * - Animated text elements
+ * - Dark mode interface
+ */
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -5,8 +19,13 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
+/// Entry point for the application
+/// Initializes necessary components and determines the initial language
 void main() async {
+  // Ensure Flutter binding is initialized
   WidgetsFlutterBinding.ensureInitialized();
+  
+  // Load saved language preference or default to English
   SharedPreferences prefs = await SharedPreferences.getInstance();
   String languageCode = prefs.getString('language_code') ?? 'en';
   
