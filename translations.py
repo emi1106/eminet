@@ -346,10 +346,16 @@ MEDICAL_TERMS_EN_RO = {
     "ulcerative colitis": "colita ulcerativa",
     "urinary tract infection": "infectie urinara",
     "whooping cough": "tuse convulsiva"
-}
-
-# Create the reverse mapping for RO -> EN
+}    # Create the reverse mapping for RO -> EN
 MEDICAL_TERMS_RO_EN = {v: k for k, v in MEDICAL_TERMS_EN_RO.items()}
+
+# Add specific Romanian terms that need direct mapping (including common variations)
+MEDICAL_TERMS_RO_EN.update({
+    "dureri de cap": "headache",      # Add direct mapping for "dureri de cap"
+    "durere de cap": "headache",      # Already exists but making explicit
+    "dureri cap": "headache",         # Common shorthand
+    "durere cap": "headache"          # Common shorthand
+})
 
 # --- Diagnosis Message Templates ---
 # Keys: language_code -> template_name -> message_template

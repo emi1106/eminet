@@ -132,17 +132,41 @@ def translate_symptoms_api(symptoms, language):
             'respirație': 'breathing', 'respiratie': 'breathing', 'dificultate': 'difficulty',
             'sângerare': 'bleeding', 'sangerare': 'bleeding', 'vedere': 'vision', 'auz': 'hearing',
             'piept': 'chest', 'spate': 'back', 'picioare': 'legs', 'brațe': 'arms', 'brate': 'arms',
-            'mâini': 'hands', 'maini': 'hands', 'ochi': 'eyes', 'urechi': 'ears'
+            'mâini': 'hands', 'maini': 'hands', 'ochi': 'eyes', 'urechi': 'ears',
+            # Add common phrases that should be translated as a single unit
+            'durere de cap': 'headache', 'dureri de cap': 'headache',
+            'durere cap': 'headache', 'dureri cap': 'headache'
             # Add more common terms as needed
-        }
-
-        # Clean input: lower, remove punctuation except spaces between words
+        }        # Clean input: lower, remove punctuation except spaces between words
         cleaned_symptoms = re.sub(r'[^\w\s]', '', symptoms.lower())
+        
+        # First check if the entire phrase is in our dictionary
+        if cleaned_symptoms in ro_en_symptoms_dict:
+            # If the entire phrase is a match, use that directly
+            translated_text = ro_en_symptoms_dict[cleaned_symptoms]
+            logging.info(f"Direct phrase match: '{symptoms}' -> '{translated_text}'")
+            return translated_text
+            
+        # Check for multi-word phrases before individual words
+        # Start with the longest possible phrases (to avoid partial matches)
+        phrase_keys = sorted([k for k in ro_en_symptoms_dict.keys() if ' ' in k], key=len, reverse=True)
+        
+        for phrase in phrase_keys:
+            if phrase in cleaned_symptoms:
+                # Replace the phrase with its translation
+                cleaned_symptoms = cleaned_symptoms.replace(phrase, ro_en_symptoms_dict[phrase])
+                logging.info(f"Phrase replacement: '{phrase}' -> '{ro_en_symptoms_dict[phrase]}'")
+                
+        # Now process any remaining individual words
         words = cleaned_symptoms.split()
-
         translated_words = []
+        
+        # Handle any remaining single words
         for word in words:
-            if word in ro_en_symptoms_dict:
+            # Skip words that are already English translations (from phrase replacements)
+            if word in ro_en_symptoms_dict.values():
+                translated_words.append(word)
+            elif word in ro_en_symptoms_dict:
                 translated_words.append(ro_en_symptoms_dict[word])
             else:
                 # Fallback to the more general translator function

@@ -60,8 +60,8 @@ This project implements a Neural Network using TensorFlow/Keras to predict poten
 4.  **Download Required NLP Data:**
     *   **NLTK Data (WordNet, Stopwords):**
         ```bash
-        python -m nltk.download wordnet
-        python -m nltk.download stopwords
+        python -m nltk.downloader wordnet
+        python -m nltk.downloader stopwords
         ```
     *   **spaCy English Model:**
         ```bash
