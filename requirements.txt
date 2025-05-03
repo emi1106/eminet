@@ -4,8 +4,8 @@ tensorflow
 nltk
 imblearn # For imbalanced-learn (SMOTE)
 spacy>=3.0 # Specify version if needed
-Flask
-Flask-Cors
+flask
+flask-Cors
 joblib
 numpy # Explicitly add numpy
 # After installing requirements, run:
