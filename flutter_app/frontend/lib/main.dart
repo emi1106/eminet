@@ -270,8 +270,14 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     } catch (e) {
       setState(() {
         _messages.add({
+<<<<<<< Updated upstream
           'sender': 'bot', 
           'text': '⚠️ ' + (AppLocalizations.of(context)?.translate('connection_error') ?? 'Connection error. Please try again later.'),
+=======
+          'sender': 'bot',
+          'text': AppLocalizations.of(context)?.translate('welcome_message') ??
+              'Hello! 👋 I\'m your medical assistant. Please enter your symptoms separated by a comma and in case you want to describe a symptom, please do so between two paranthesis for optimal predictions.',
+>>>>>>> Stashed changes
           'timestamp': DateTime.now(),
         });
         _isLoading = false;
@@ -683,7 +689,12 @@ class AppLocalizations {
     },
     'ro': {
       'app_title': 'Chatbot de Diagnostic Medical',
+<<<<<<< Updated upstream
       'welcome_message': 'Bună! 👋 Sunt asistentul tău medical. Te rog să-mi descrii simptomele tale.',
+=======
+      'welcome_message':
+          'Bună! 👋 Sunt asistentul tău medical. Te rog să-ți introduci simptomele separate printr-o virgulă și în caz că dorești să descrii un simptom, te rog fă asta între paranteze pentru predictii optime.',
+>>>>>>> Stashed changes
       'error_message': 'Eroare: ',
       'connection_error': 'Eroare de conexiune. Vă rugăm să încercați mai târziu.',
       'chat_tab': 'Chat',

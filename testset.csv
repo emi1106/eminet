@@ -1,0 +1,272 @@
+Symptoms,Illness
+"Wheezing, shortness of breath, chest tightness, coughing",Asthma
+"Itchy, spotty rash, fever, fatigue",Chickenpox
+"Increased thirst, frequent urination, fatigue, unintended weight loss",Diabetes
+"Dry, itchy, cracked skin, flare-ups",Eczema
+"Sudden high temperature, aching body, fatigue, dry cough, sore throat",Flu
+"Sudden diarrhea, vomiting, stomach cramps, fever",Gastroenteritis
+"Often asymptomatic; severe cases: headaches, shortness of breath, nosebleeds",Hypertension
+"Stomach cramps, bloating, diarrhea, constipation",Irritable Bowel Syndrome
+"Yellowing of skin and eyes, dark urine, pale stools",Jaundice
+"Severe pain in back or side, blood in urine, nausea, vomiting",Kidney Stones
+"Severe headache, nausea, sensitivity to light and sound",Migraine
+"Fever, cough, difficulty breathing, chest pain",Pneumonia
+"Persistent cough, mucus production, chest discomfort",Bronchitis
+"Severe abdominal pain, nausea, vomiting, fever",Appendicitis
+"Sore throat, difficulty swallowing, swollen tonsils",Tonsillitis
+"Fatigue, pale skin, dizziness, shortness of breath",Anemia
+"Jaundice, abdominal pain, nausea, dark urine",Hepatitis
+"Fever, headache, stiff neck, nausea, confusion",Meningitis
+"Persistent cough, weight loss, night sweats, fever",Tuberculosis
+"Facial pain, nasal congestion, headache, runny nose",Sinusitis
+"Red, scaly patches on the skin, itching, burning",Psoriasis
+"Abdominal pain, diarrhea, rectal bleeding, weight loss",Ulcerative Colitis
+"Chronic diarrhea, abdominal pain, fatigue, weight loss",Crohns Disease
+"Fever, weight loss, night sweats, immune system decline",HIV/AIDS
+"Seizures, confusion, loss of consciousness, muscle twitching",Epilepsy
+"Sudden numbness, weakness, difficulty speaking, loss of balance",Stroke
+"Chest pain, shortness of breath, nausea, dizziness",Heart Attack
+"Numbness, muscle weakness, vision problems, balance issues",Multiple Sclerosis
+"Tremors, slow movements, muscle stiffness, balance problems",Parkinsons Disease
+"Memory loss, confusion, difficulty with speech and thinking",Alzheimers Disease
+"Joint pain, stiffness, swelling, reduced mobility",Osteoarthritis
+"Joint pain, swelling, fatigue, morning stiffness",Rheumatoid Arthritis
+"Fatigue, joint pain, skin rash, fever, kidney problems",Lupus
+"Diarrhea, bloating, weight loss, fatigue, nutrient deficiencies",Celiac Disease
+"Joint pain, swelling, redness, warmth, stiffness",Gout
+"Pain, itching, swelling, rectal bleeding",Hemorrhoids
+"Frequent urination, burning sensation, cloudy urine, pelvic pain",Urinary Tract Infection
+"Abdominal pain, nausea, vomiting, indigestion, bloating",Gallstones
+"Severe abdominal pain, nausea, vomiting, fever",Pancreatitis
+"Heartburn, acid reflux, difficulty swallowing, chest pain",GERD
+"Ear pain, fever, hearing difficulty, fluid drainage",Otitis Media
+"Red, itchy, watery eyes, swelling, discharge",Conjunctivitis
+"Gradual vision loss, eye pain, headaches, halos around lights",Glaucoma
+"Blurred vision, faded colors, sensitivity to light, double vision",Cataracts
+"Unintentional weight loss, fast heartbeat, heat intolerance",Hyperthyroidism
+"Fatigue, weight gain, cold intolerance, slow heart rate",Hypothyroidism
+"Itchy rash, burrow-like tracks in skin, intense itching at night",Scabies
+"Circular, red, scaly rash with a clear center, itching",Ringworm
+"Fever, runny nose, cough, red eyes, rash",Measles
+"Swollen salivary glands, fever, headache, muscle aches",Mumps
+"Heartburn, acid regurgitation, chest discomfort, difficulty swallowing",Acid Reflux
+"Pimples, blackheads, whiteheads, oily skin, inflammation",Acne
+"Fatigue, weight loss, low blood pressure, skin darkening",Addisons Disease
+"Often asymptomatic; rupture: severe headache, vision loss, loss of consciousness",Aneurysm
+"Sudden facial paralysis, drooping mouth, loss of taste, drooling",Bell's Palsy
+"Mood swings, manic episodes, depressive episodes, impulsive behavior",Bipolar Disorder
+"Red, swollen, painful lump filled with pus",Boils
+"Headaches, vision problems, seizures, memory loss",Brain Tumor
+"Irregular bleeding, pelvic pain, unusual discharge",Cervical Cancer
+"Watery diarrhea, dehydration, muscle cramps, rapid heartbeat",Cholera
+"Painful blisters, tingling sensation, swollen gums",Cold Sores
+"Thick mucus, persistent cough, lung infections, poor growth",Cystic Fibrosis
+"High fever, severe muscle pain, rash, bleeding gums",Dengue Fever
+"Persistent sadness, loss of interest, fatigue, sleep disturbances",Depression
+"Pelvic pain, painful periods, heavy menstrual bleeding, infertility",Endometriosis
+"Severe sore throat, difficulty breathing, drooling, fever",Epiglottitis
+"Widespread pain, fatigue, sleep disturbances, memory issues",Fibromyalgia
+"Nausea, vomiting, diarrhea, stomach cramps, fever",Food Poisoning
+"Severe pain, swelling, bruising, deformity",Fracture
+"Tissue death, skin discoloration, foul odor, severe pain",Gangrene
+"Diarrhea, abdominal cramps, bloating, gas",Giardiasis
+"Weakness, tingling, paralysis, difficulty breathing",Guillain-Barré Syndrome
+"Fever, muscle aches, shortness of breath, coughing",Hantavirus
+"High body temperature, confusion, dizziness, lack of sweating",Heat Stroke
+"Easy bruising, prolonged bleeding, joint pain, blood in urine",Hemophilia
+"Bulging lump, pain, discomfort during lifting or bending",Hernia
+"Nausea, kidney stones, frequent urination, confusion",Hypercalcemia
+"Dizziness, sweating, hunger, rapid heartbeat, confusion",Hypoglycemia
+"Fatigue, frequent infections, easy bruising, unexplained weight loss",Leukemia
+"Fatigue, jaundice, swelling in legs, confusion",Liver Cirrhosis
+"Bullseye rash, fever, joint pain, fatigue",Lyme Disease
+"Fever, chills, sweating, nausea, muscle pain",Malaria
+"New or changing mole, irregular borders, asymmetry, multiple colors",Melanoma
+"Severe pain, rapid swelling, skin discoloration, fever",Necrotizing Fasciitis
+"Fever, hallucinations, excessive salivation, paralysis",Rabies
+"Fever, confusion, rapid heartbeat, difficulty breathing",Sepsis
+"Painful rash, blisters, burning sensation, itching",Shingles
+"High fever, weakness, abdominal pain, rose-colored rash",Typhoid Fever
+"Severe coughing fits, whooping sound, vomiting, exhaustion",Whooping Cough
+"Wheezing, shortness of breath, chest tightness, coughing",Asthma
+"Itchy, spotty rash, fever, fatigue",Chickenpox
+"Increased thirst, frequent urination, fatigue, unintended weight loss",Diabetes
+"Dry, itchy, cracked skin, flare-ups",Eczema
+"Sudden high temperature, aching body, fatigue, dry cough, sore throat",Flu
+"Sudden diarrhea, vomiting, stomach cramps, fever",Gastroenteritis
+"Often asymptomatic; severe cases: headaches, shortness of breath, nosebleeds",Hypertension
+"Stomach cramps, bloating, diarrhea, constipation",Irritable Bowel Syndrome
+"Yellowing of skin and eyes, dark urine, pale stools",Jaundice
+"Severe pain in back or side, blood in urine, nausea, vomiting",Kidney Stones
+"Severe headache, nausea, sensitivity to light and sound",Migraine
+"Fever, cough, difficulty breathing, chest pain",Pneumonia
+"Persistent cough, mucus production, chest discomfort",Bronchitis
+"Severe abdominal pain, nausea, vomiting, fever",Appendicitis
+"Sore throat, difficulty swallowing, swollen tonsils",Tonsillitis
+"Fatigue, pale skin, dizziness, shortness of breath",Anemia
+"Jaundice, abdominal pain, nausea, dark urine",Hepatitis
+"Fever, headache, stiff neck, nausea, confusion",Meningitis
+"Persistent cough, weight loss, night sweats, fever",Tuberculosis
+"Facial pain, nasal congestion, headache, runny nose",Sinusitis
+"Red, scaly patches on the skin, itching, burning",Psoriasis
+"Abdominal pain, diarrhea, rectal bleeding, weight loss",Ulcerative Colitis
+"Chronic diarrhea, abdominal pain, fatigue, weight loss",Crohns Disease
+"Fever, weight loss, night sweats, immune system decline",HIV/AIDS
+"Seizures, confusion, loss of consciousness, muscle twitching",Epilepsy
+"Sudden numbness, weakness, difficulty speaking, loss of balance",Stroke
+"Chest pain, shortness of breath, nausea, dizziness",Heart Attack
+"Numbness, muscle weakness, vision problems, balance issues",Multiple Sclerosis
+"Tremors, slow movements, muscle stiffness, balance problems",Parkinsons Disease
+"Memory loss, confusion, difficulty with speech and thinking",Alzheimers Disease
+"Joint pain, stiffness, swelling, reduced mobility",Osteoarthritis
+"Joint pain, swelling, fatigue, morning stiffness",Rheumatoid Arthritis
+"Fatigue, joint pain, skin rash, fever, kidney problems",Lupus
+"Diarrhea, bloating, weight loss, fatigue, nutrient deficiencies",Celiac Disease
+"Joint pain, swelling, redness, warmth, stiffness",Gout
+"Pain, itching, swelling, rectal bleeding",Hemorrhoids
+"Frequent urination, burning sensation, cloudy urine, pelvic pain",Urinary Tract Infection
+"Abdominal pain, nausea, vomiting, indigestion, bloating",Gallstones
+"Severe abdominal pain, nausea, vomiting, fever",Pancreatitis
+"Heartburn, acid reflux, difficulty swallowing, chest pain",GERD
+"Ear pain, fever, hearing difficulty, fluid drainage",Otitis Media
+"Red, itchy, watery eyes, swelling, discharge",Conjunctivitis
+"Gradual vision loss, eye pain, headaches, halos around lights",Glaucoma
+"Blurred vision, faded colors, sensitivity to light, double vision",Cataracts
+"Unintentional weight loss, fast heartbeat, heat intolerance",Hyperthyroidism
+"Fatigue, weight gain, cold intolerance, slow heart rate",Hypothyroidism
+"Itchy rash, burrow-like tracks in skin, intense itching at night",Scabies
+"Circular, red, scaly rash with a clear center, itching",Ringworm
+"Fever, runny nose, cough, red eyes, rash",Measles
+"Swollen salivary glands, fever, headache, muscle aches",Mumps
+"Heartburn, acid regurgitation, chest discomfort, difficulty swallowing",Acid Reflux
+"Pimples, blackheads, whiteheads, oily skin, inflammation",Acne
+"Fatigue, weight loss, low blood pressure, skin darkening",Addisons Disease
+"Often asymptomatic; rupture: severe headache, vision loss, loss of consciousness",Aneurysm
+"Sudden facial paralysis, drooping mouth, loss of taste, drooling",Bell's Palsy
+"Mood swings, manic episodes, depressive episodes, impulsive behavior",Bipolar Disorder
+"Red, swollen, painful lump filled with pus",Boils
+"Headaches, vision problems, seizures, memory loss",Brain Tumor
+"Irregular bleeding, pelvic pain, unusual discharge",Cervical Cancer
+"Watery diarrhea, dehydration, muscle cramps, rapid heartbeat",Cholera
+"Painful blisters, tingling sensation, swollen gums",Cold Sores
+"Thick mucus, persistent cough, lung infections, poor growth",Cystic Fibrosis
+"High fever, severe muscle pain, rash, bleeding gums",Dengue Fever
+"Persistent sadness, loss of interest, fatigue, sleep disturbances",Depression
+"Pelvic pain, painful periods, heavy menstrual bleeding, infertility",Endometriosis
+"Severe sore throat, difficulty breathing, drooling, fever",Epiglottitis
+"Widespread pain, fatigue, sleep disturbances, memory issues",Fibromyalgia
+"Nausea, vomiting, diarrhea, stomach cramps, fever",Food Poisoning
+"Severe pain, swelling, bruising, deformity",Fracture
+"Tissue death, skin discoloration, foul odor, severe pain",Gangrene
+"Diarrhea, abdominal cramps, bloating, gas",Giardiasis
+"Weakness, tingling, paralysis, difficulty breathing",Guillain-Barré Syndrome
+"Fever, muscle aches, shortness of breath, coughing",Hantavirus
+"High body temperature, confusion, dizziness, lack of sweating",Heat Stroke
+"Easy bruising, prolonged bleeding, joint pain, blood in urine",Hemophilia
+"Bulging lump, pain, discomfort during lifting or bending",Hernia
+"Nausea, kidney stones, frequent urination, confusion",Hypercalcemia
+"Dizziness, sweating, hunger, rapid heartbeat, confusion",Hypoglycemia
+"Fatigue, frequent infections, easy bruising, unexplained weight loss",Leukemia
+"Fatigue, jaundice, swelling in legs, confusion",Liver Cirrhosis
+"Bullseye rash, fever, joint pain, fatigue",Lyme Disease
+"Fever, chills, sweating, nausea, muscle pain",Malaria
+"New or changing mole, irregular borders, asymmetry, multiple colors",Melanoma
+"Severe pain, rapid swelling, skin discoloration, fever",Necrotizing Fasciitis
+"Fever, hallucinations, excessive salivation, paralysis",Rabies
+"Fever, confusion, rapid heartbeat, difficulty breathing",Sepsis
+"Painful rash, blisters, burning sensation, itching",Shingles
+"High fever, weakness, abdominal pain, rose-colored rash",Typhoid Fever
+"Severe coughing fits, whooping sound, vomiting, exhaustion",Whooping Cough
+Mononucleosis,"Fatigue, sore throat, fever, swollen lymph nodes in neck and armpits, headache, skin rash, swollen spleen"
+Strep Throat,"Sudden sore throat, pain when swallowing, fever, red and swollen tonsils (sometimes with white patches or streaks of pus), tiny red spots on the roof of the mouth, headache, body aches, rash"
+Tetanus,"Jaw cramping (lockjaw), sudden involuntary muscle spasms (often in the stomach), painful muscle stiffness all over the body, trouble swallowing, seizures, headache, fever, sweating"
+Diphtheria,"Thick, gray membrane covering the throat and tonsils, sore throat, hoarseness, swollen glands (bull neck), difficulty breathing, rapid breathing, nasal discharge, fever, chills, malaise"
+Polio,"Fever, sore throat, headache, vomiting, fatigue, meningitis (stiffness of back/neck, pain in limbs), loss of reflexes, severe muscle aches or weakness, loose and floppy limbs (flaccid paralysis)"
+Rubella (German Measles),"Mild fever, headache, stuffy or runny nose, inflamed red eyes, enlarged tender lymph nodes at base of skull/back of neck/behind ears, fine pink rash starting on face and spreading downwards"
+Genital Herpes,"Pain, itching, or tenderness in the genital area; small red bumps or tiny white blisters; ulcers (form when blisters rupture and ooze or bleed); scabs (form as ulcers heal); flu-like symptoms (fever, body aches, swollen lymph nodes during initial outbreak)"
+Human Papillomavirus (HPV) Infection,"Genital warts (small, flesh-colored or gray swellings in the genital area, or cauliflower-like bumps); symptoms related to cervical, anal, or throat cancers if specific types progress"
+Gonorrhea,"Painful urination, pus-like discharge from the penis, pain or swelling in one testicle (men); increased vaginal discharge, painful urination, vaginal bleeding between periods, abdominal pain, pelvic pain (women)"
+Syphilis,"Painless sore (chancre) at infection site; skin rash (often on palms and soles), swollen lymph nodes, fever, sore throat, patchy hair loss, muscle aches, fatigue; damage to brain, nerves, eyes, heart, blood vessels, liver, bones, joints (late stage)"
+Chlamydia,"Discharge from penis, burning sensation during urination, pain and swelling in one or both testicles (men); abnormal vaginal discharge (may have an odor), burning sensation during urination, pain during intercourse, lower abdominal pain (women)"
+Candidiasis (Thrush),"Oral: white patches on tongue/inner cheeks/roof of mouth/gums/tonsils (may bleed if scraped), redness, soreness, difficulty swallowing; Vaginal: itching and irritation in vagina/vulva, burning sensation, redness/swelling of vulva, thick white odor-free vaginal discharge (cottage cheese appearance)"
+Athlete's Foot,"Itchy, scaly rash (often between toes), stinging, burning, discomfort, blisters, cracking and peeling skin, dry scaly skin on soles/sides of feet"
+Cellulitis,"Red, swollen, warm, and tender area of skin; pain; skin may look pitted; blisters may form; fever and chills"
+Impetigo,"Red sores that quickly rupture, ooze, and form a yellow-brown crust; itching; painless, fluid-filled blisters (bullous type)"
+Sjogren's Syndrome,"Dry eyes (burning, itching, gritty sensation), dry mouth (difficulty swallowing/speaking, increased dental cavities), fatigue, joint pain, swelling, stiffness, swollen salivary glands"
+Graves' Disease,"Anxiety, irritability, fine tremor of hands/fingers, heat sensitivity, increased perspiration, weight loss, goiter, change in menstrual cycles, erectile dysfunction, frequent bowel movements, bulging eyes, fatigue, thick red skin on shins/feet (rare)"
+Hashimoto's Thyroiditis,"Fatigue, sluggishness, increased sensitivity to cold, constipation, pale dry skin, puffy face, brittle nails, hair loss, enlarged tongue, unexplained weight gain, muscle aches/tenderness/stiffness, joint pain/stiffness, depression, memory lapses, goiter"
+Alopecia Areata,"Patchy hair loss (often round/oval on scalp, beard, eyebrows, eyelashes), sudden hair loss, nail pitting/white spots/roughness"
+Vitiligo,"Loss of skin color in patches (depigmentation) on skin, hair (premature whitening/graying), and mucous membranes (inside mouth/nose)"
+Myasthenia Gravis,"Muscle weakness worsening with activity and improving with rest; drooping eyelids (ptosis); blurred or double vision (diplopia); changes in facial expression; difficulty swallowing (dysphagia); shortness of breath; impaired speech (dysarthria)"
+Lung Cancer,"Persistent cough, coughing up blood, chest pain (worse with deep breathing/coughing/laughing), hoarseness, shortness of breath, unexplained weight loss, fatigue, recurring bronchitis or pneumonia"
+Breast Cancer,"Lump or thickening in breast or armpit, change in breast size/shape/appearance, skin dimpling/puckering, newly inverted nipple, redness or pitting of breast skin, nipple discharge (not breast milk)"
+Prostate Cancer,"Trouble urinating, decreased force in urine stream, blood in semen, blood in urine, bone pain, erectile dysfunction, unexplained weight loss"
+Colorectal Cancer,"Change in bowel habits (diarrhea, constipation, narrow stool), rectal bleeding, blood in stool, persistent abdominal discomfort (cramps, gas, pain), feeling of incomplete bowel emptying, weakness, fatigue, unexplained weight loss"
+Pancreatic Cancer,"Abdominal pain radiating to back, loss of appetite, unintended weight loss, jaundice (yellowing skin/eyes), light-colored stools, dark urine, itchy skin, new/worsening diabetes, nausea, vomiting, fatigue"
+Ovarian Cancer,"Abdominal bloating or swelling, quickly feeling full when eating, weight loss, pelvic discomfort, changes in bowel habits (constipation), frequent need to urinate"
+Bladder Cancer,"Blood in urine (hematuria - bright red or cola-colored), frequent urination, painful urination, back pain, pelvic pain"
+Kidney Cancer (Renal Cell Carcinoma),"Blood in urine (hematuria), persistent pain in back/side below ribs, loss of appetite, unexplained weight loss, tiredness, intermittent fever"
+Thyroid Cancer,"Lump (nodule) in neck, voice changes (hoarseness), difficulty swallowing, pain in neck/throat, swollen lymph nodes in neck"
+Lymphoma,"Painless swelling of lymph nodes (neck, armpits, groin), persistent fatigue, fever, night sweats, unexplained weight loss, itchy skin, shortness of breath"
+Skin Cancer (Non-melanoma),"Basal Cell: pearly/waxy bump, flat flesh-colored/brown scar-like lesion, sores that heal and return; Squamous Cell: firm red nodule, flat lesion with scaly/crusted surface"
+Heart Failure (Congestive Heart Failure),"Shortness of breath (exertional or when lying down), fatigue, weakness, swelling (edema) in legs/ankles/feet, rapid/irregular heartbeat, persistent cough/wheezing with white/pink blood-tinged phlegm, reduced exercise ability, abdominal swelling"
+Arrhythmia,"Fluttering in chest, racing heartbeat (tachycardia), slow heartbeat (bradycardia), chest pain, shortness of breath, dizziness, lightheadedness, fainting (syncope)"
+Peripheral Artery Disease (PAD),"Painful cramping in hip/thigh/calf muscles after activity (claudication), leg numbness/weakness, coldness in lower leg/foot, non-healing sores on toes/feet/legs, leg color change, hair loss on feet/legs, shiny leg skin, weak/no pulse in legs/feet, erectile dysfunction"
+Deep Vein Thrombosis (DVT),"Swelling in affected leg, pain/tenderness in leg (often calf, like a cramp), warm skin on affected area, red/discolored skin on affected area"
+Pulmonary Embolism,"Sudden shortness of breath, chest pain (sharp, worse with deep breath/cough), cough (may be bloody), rapid/irregular heartbeat, lightheadedness, dizziness, excessive sweating, fever, leg pain/swelling (if from DVT)"
+Angina,"Chest pain/discomfort (pressure, squeezing, fullness), pain radiating to arm/neck/jaw/shoulder/back, nausea, fatigue, shortness of breath, sweating, dizziness"
+COPD (Chronic Obstructive Pulmonary Disease),"Shortness of breath (especially during activity), wheezing, chest tightness, chronic cough with mucus, frequent respiratory infections, lack of energy, unintended weight loss, ankle/feet/leg swelling"
+Emphysema,"Shortness of breath (primary, worsens over time), chronic cough (often little mucus), wheezing, chest tightness, barrel chest appearance (later stages), fatigue, difficulty concentrating"
+Pulmonary Fibrosis,"Shortness of breath (dyspnea), dry hacking cough, fatigue, unexplained weight loss, aching muscles/joints, clubbing (widening/rounding of finger/toe tips)"
+Sleep Apnea,"Loud snoring, witnessed breathing pauses during sleep, gasping for air during sleep, awakening with dry mouth, morning headache, excessive daytime sleepiness, difficulty concentrating, irritability"
+Peptic Ulcer,"Burning stomach pain (worse between meals/at night, relieved by food/antacids), fullness, bloating, belching, fatty food intolerance, heartburn, nausea"
+Diverticulitis,"Persistent abdominal pain (usually lower left side), nausea, vomiting, fever, abdominal tenderness, constipation or diarrhea, bloating"
+Gastritis,"Gnawing or burning ache/pain (indigestion) in upper abdomen (may worsen/improve with eating), nausea, vomiting, feeling of fullness after eating, loss of appetite"
+Generalized Anxiety Disorder,"Persistent excessive worry, overthinking worst-case scenarios, perceiving threats, difficulty handling uncertainty, indecisiveness, inability to relax, restlessness, feeling on edge, difficulty concentrating, fatigue, irritability, muscle tension, trouble sleeping"
+Panic Disorder,"Recurrent unexpected panic attacks (intense fear, severe physical reactions), feeling of impending doom/danger, fear of loss of control/death, rapid pounding heart, sweating, trembling, shortness of breath, throat tightness, chills, hot flashes, nausea, abdominal cramping, chest pain, headache, dizziness, numbness/tingling, feeling of unreality/detachment"
+Obsessive-Compulsive Disorder (OCD),"Obsessions (recurrent intrusive thoughts/urges/images causing distress) AND/OR compulsions (repetitive behaviors/mental acts driven by obsessions), time-consuming, causing significant distress/impairment"
+Post-Traumatic Stress Disorder (PTSD),"Intrusive memories (flashbacks, nightmares), avoidance of trauma reminders, negative changes in thinking/mood (hopelessness, memory problems, detachment, loss of interest), changes in physical/emotional reactions (easily startled, always on guard, self-destructive behavior, sleep/concentration issues, irritability, guilt, shame)"
+Schizophrenia,"Delusions (false beliefs), hallucinations (seeing/hearing things not there), disorganized thinking/speech (word salad), disorganized/abnormal motor behavior, negative symptoms (reduced ability to function, lack of emotion, social withdrawal)"
+ADHD (Attention-Deficit/Hyperactivity Disorder),"Inattention: difficulty sustaining attention, not listening, fails to finish tasks, difficulty organizing, avoids sustained mental effort, loses things, easily distracted, forgetful; Hyperactivity-Impulsivity: fidgets, leaves seat, runs/climbs inappropriately, unable to play quietly, 'on the go,' talks excessively, blurts out answers, difficulty waiting turn, interrupts"
+Autism Spectrum Disorder,"Deficits in social communication/interaction (e.g., social-emotional reciprocity, nonverbal communication, relationships); Restricted, repetitive patterns of behavior/interests/activities (e.g., stereotyped movements, insistence on sameness, fixated interests, sensory hyper/hyporeactivity)"
+Sciatica,"Pain radiating from lower spine to buttock and down back of leg (usually one side), pain varies (mild ache to sharp/burning), numbness, tingling, muscle weakness in affected leg/foot, pain worsens with sitting/coughing/sneezing"
+Carpal Tunnel Syndrome,"Numbness/tingling in hand/fingers (thumb, index, middle, ring), pain in wrist/palm/forearm, hand weakness, tendency to drop objects, shock-like sensations to fingers"
+Amyotrophic Lateral Sclerosis (ALS),"Progressive muscle weakness, muscle twitches (fasciculations), muscle cramps, muscle stiffness (spasticity), slurred/nasal speech (dysarthria), difficulty chewing/swallowing (dysphagia), difficulty with fine motor skills, limb weakness, eventual paralysis"
+Huntington's Disease,"Involuntary jerking/writhing movements (chorea), muscle rigidity/contracture (dystonia), slow/abnormal eye movements, impaired gait/posture/balance, difficulty speaking/swallowing, cognitive impairments (difficulty organizing, lack of impulse control, memory issues), psychiatric disorders (depression, OCD, mania)"
+Narcolepsy,"Excessive daytime sleepiness (EDS), cataplexy (sudden loss of muscle tone, triggered by emotions), sleep paralysis, hallucinations (hypnagogic/hypnopompic), fragmented nighttime sleep"
+Cushing's Syndrome,"Weight gain (midsection, upper back, face - 'moon face', between shoulders - 'buffalo hump'), pink/purple stretch marks, thinning fragile skin, easy bruising, slow healing, acne, fatigue, muscle weakness, depression, anxiety, irritability, high blood pressure, glucose intolerance, headache, bone loss"
+Polycystic Ovary Syndrome (PCOS),"Irregular/absent menstrual periods, excess androgen signs (excess facial/body hair - hirsutism, severe acne, male-pattern baldness), polycystic ovaries on ultrasound, infertility, weight gain/difficulty losing weight, insulin resistance, skin tags, darkened skin patches (acanthosis nigricans)"
+Osteoporosis,"Back pain (from fractured/collapsed vertebra), loss of height, stooped posture, bone breaking easily"
+Tendinitis,"Dull ache, tenderness, mild swelling around tendon, pain worsening with activity, grating/crackling sensation (crepitus) with movement"
+Bursitis,"Achy/stiff joint, pain worsening with movement/pressure, swelling/redness over joint, limited range of motion"
+Scoliosis,"Uneven shoulders, one prominent shoulder blade, uneven waist, one hip higher, leaning to one side, back pain"
+Herniated Disc,"Arm or leg pain (depending on location), numbness/tingling in area served by affected nerves, muscle weakness in area served by nerves, pain worsening with certain movements (sitting, bending, coughing)"
+Rosacea,"Facial redness (persistent blushing/flushing), swollen red bumps (papules/pustules), eye problems (dry, irritated, swollen eyelids), enlarged nose (rhinophyma - rare)"
+Warts,"Small, fleshy, grainy bumps; flesh-colored, white, pink, or tan; rough to touch; may have black pinpoints (clotted blood vessels)"
+Hives (Urticaria),"Raised, itchy welts (wheals) on skin; welts can be red, pink, or flesh-colored, vary in size/shape, appear/fade repeatedly; burning or stinging"
+Contact Dermatitis,"Red rash or bumps, severe itching, dry, cracked, scaly skin, blisters and oozing, swelling, burning, tenderness on skin exposed to irritant/allergen"
+Sickle Cell Anemia,"Episodes of pain (pain crises), swelling of hands/feet, frequent infections, delayed growth/puberty, vision problems, fatigue, jaundice"
+Thalassemia,"Fatigue, weakness, pale/yellowish skin (jaundice), facial bone deformities, slow growth, dark urine, abdominal swelling"
+Polycythemia Vera,"Headache, dizziness, itchiness (especially after warm bath), facial redness (plethora), fatigue, shortness of breath, numbness/tingling/burning/weakness in hands/feet/arms/legs, early satiety, left upper abdominal pain (enlarged spleen), unexplained weight loss, unusual bleeding/bruising"
+Chronic Kidney Disease (CKD),"Nausea, vomiting, loss of appetite, fatigue, weakness, sleep problems, changes in urination, decreased mental sharpness, muscle twitches/cramps, swelling of feet/ankles, persistent itching, chest pain, shortness of breath, high blood pressure"
+Glomerulonephritis,"Pink or cola-colored urine (hematuria), foamy urine (proteinuria), high blood pressure, swelling (edema) in face/hands/feet/abdomen, fatigue, urinating less"
+Interstitial Cystitis (Painful Bladder Syndrome),"Chronic pelvic pain, perineal pain, persistent urgent need to urinate, frequent urination (small amounts), pain/discomfort while bladder fills (relief after urinating), pain during intercourse"
+Macular Degeneration (Age-related),"Blurred/distorted central vision, dark/blurry areas or blind spot in central vision, diminished/changed color perception, straight lines appearing wavy, difficulty recognizing faces"
+Diabetic Retinopathy,"Spots/dark strings floating in vision (floaters), blurred vision, fluctuating vision, impaired color vision, dark/empty areas in vision, vision loss"
+Stye (Hordeolum),"Red, painful lump near eyelid edge (like boil/pimple), eyelid swelling, tearing, light sensitivity, gritty sensation in eye"
+Laryngitis,"Hoarseness, weak voice/voice loss, tickling sensation/rawness in throat, sore throat, dry cough, difficulty swallowing"
+Vertigo,"Sensation of spinning/whirling, loss of balance, nausea, vomiting, abnormal rhythmic eye movements (nystagmus); symptoms often triggered by head position changes"
+Tinnitus,"Perception of noise/ringing in ears (ringing, buzzing, roaring, clicking, hissing, humming) when no external sound is present"
+Roseola,"Sudden high fever, followed by rash of small pink spots/patches (starts on trunk, spreads to neck/face/arms/legs) once fever breaks, irritability, mild diarrhea, decreased appetite, swollen eyelids, mild sore throat, runny nose, cough, swollen lymph nodes"
+HandFootMouth Disease,"Fever, sore throat, malaise, painful red blister-like lesions on tongue/gums/inside cheeks, red rash (sometimes with blistering) on palms/soles/buttocks, irritability, loss of appetite"
+Scarlet Fever,"Very red sore throat, fever, whitish tongue coating or 'strawberry' tongue, red sandpaper-like rash (starts on neck/chest, spreads), flushed face with pale ring around mouth, red lines in skin folds (Pastia's lines)"
+Down Syndrome,"Flattened face, small head, upward slanting eyes, small ears, protruding tongue, single deep palm crease, poor muscle tone, short stature, intellectual disability, heart defects"
+Muscular Dystrophy,"Progressive muscle weakness, frequent falls, difficulty rising, trouble running/jumping, waddling gait, walking on toes, large calf muscles (some types), muscle pain/stiffness, learning disabilities (some types), eventual loss of walking, breathing/heart problems"
+Marfan Syndrome,"Tall slender build, long arms/legs/fingers/toes, protruding/indented sternum, high arched palate, crowded teeth, heart murmurs, extreme nearsightedness, curved spine (scoliosis), flat feet, flexible joints, stretch marks, aortic aneurysm/dissection risk"
+Scurvy,"Fatigue, weakness, irritability, joint pain, swollen bleeding gums, loose teeth, poor wound healing, easy bruising, dry brittle hair, skin hemorrhages (petechiae), depression, anemia"
+Rickets,"Delayed growth, bone pain/tenderness (arms, legs, pelvis, spine), muscle weakness, skeletal deformities (bowed legs, knock-knees, thickened wrists/ankles, pigeon chest), dental problems"
+Pellagra,"Diarrhea, dermatitis (sun-sensitive rash, 'Casal's necklace'), dementia (confusion, memory loss, depression), glossitis (inflamed tongue), weakness, loss of appetite, abdominal pain"
+Beriberi,"Wet: shortness of breath, rapid heart rate, swollen lower legs; Dry: decreased muscle function (lower legs), tingling/loss of feeling in hands/feet, pain, mental confusion, speech difficulties, difficulty walking, vomiting, involuntary eye movements, paralysis"
+Varicose Veins,"Dark purple/blue veins, twisted/bulging veins (like cords), achy/heavy legs, burning, throbbing, muscle cramping, swelling in lower legs, worsened pain after prolonged sitting/standing, itching around veins, skin discoloration, ulcers near ankle (severe)"
+Chronic Fatigue Syndrome (ME/CFS),"Profound fatigue (>6 months, not improved by rest), post-exertional malaise, unrefreshing sleep, cognitive impairment ('brain fog'), orthostatic intolerance, muscle/joint pain, headaches, tender lymph nodes, recurrent sore throat"
+Restless Legs Syndrome,"Uncontrollable urge to move legs due to uncomfortable sensation, symptoms worsen at rest/night, relieved by movement, sleep disruption, daytime fatigue"

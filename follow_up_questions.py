@@ -21,6 +21,7 @@ follow_up_by_illness = {
         "hypertension": "Have you had your blood pressure checked recently? Was it high?", # Less direct symptom question
         "diabetes": "Have you noticed excessive thirst or needing to urinate much more often than usual?",
         "heart disease": "Do you get short of breath easily during physical activity?",
+        "heart attack": "Are you experiencing chest pain or discomfort, possibly like pressure or squeezing, which might radiate to your arm, neck, or jaw? (If so, please seek immediate medical attention!)",
         "anemia": "Do you feel unusually tired, weak, or look pale?",
         "appendicitis": "Is the abdominal pain mostly concentrated in the lower right part of your belly?",
         "gerd": "Do you often experience heartburn or acid reflux, especially after eating or when lying down?",
@@ -41,6 +42,7 @@ follow_up_by_illness = {
         "hypertension": "V-ați verificat recent tensiunea arterială? A fost ridicată?",
         "diabetes": "Ați observat o sete excesivă sau nevoia de a urina mult mai des decât de obicei?",
         "heart disease": "Obosiți ușor sau aveți dificultăți de respirație în timpul activității fizice?",
+        "heart attack": "Simțiți durere sau disconfort în piept, posibil ca o presiune sau strângere, care ar putea radia către braț, gât sau maxilar? (Dacă da, vă rugăm să căutați imediat asistență medicală!)",
         "anemia": "Vă simțiți neobișnuit de obosit, slăbit sau sunteți palid?",
         "appendicitis": "Durerea abdominală este concentrată mai ales în partea dreaptă jos a abdomenului?",
         "gerd": "Aveți des arsuri la stomac sau reflux acid, mai ales după masă sau când stați întins?",
